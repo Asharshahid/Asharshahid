@@ -1,0 +1,507 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(250, 249, 249);
+}
+button{
+    background-color: black;
+    border-color: black;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: orangered;
+    border-color: orangered;
+}
+span{
+    color: orangered;
+}
+.navbar{
+    background-color: white !important;
+}
+#asdf:hover{
+    color: orangered;
+}
+/* span:hover{
+    color: orangered;
+    animation-name: forh1;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+@keyframes forh1 {
+    0%{color: orangered;}
+    50%{color: black;}
+    100%{color: orangered;}
+} */
+
+
+/* HEADER SECTION __________________ */
+.logo i{
+    color: black;
+    margin-left: 40px;
+}
+
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+nav >ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+}
+nav a{
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 10px;
+    padding: 7px;
+}
+
+header a:hover,header i:hover{
+    color: orangered;
+}
+
+@media screen and (max-width:790px) {
+    nav a{
+        color: black;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 8px;
+        padding: 5px;
+    }
+}
+@media screen and (max-width:670px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        align-items: center;
+        padding: 12px;
+    }
+    nav{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+    nav > ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    nav > ul > li{
+        margin-top: 10px;
+    }
+    .logo i{
+        color: black;
+        margin-left: 0px;
+    }
+}
+/* BACKGROUND SECTION __________________ */
+
+section{
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    background: url(images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    align-items: center;
+}
+.home .content{
+    max-width: 400px;
+}
+
+.home .image img{
+    max-width: 350px;
+}
+@media screen and (min-width:781px) {
+    .home .image img{
+    animation-name: burgerAnimation;
+    animation-duration: 7s;
+    animation-delay:1s ;
+    animation-iteration-count: 1;
+}
+@keyframes burgerAnimation{
+    0%{max-width: 350px;}
+    20%{max-width:100px;}
+    40%{max-width: 350px;}
+    100%{transform: rotate(360deg);}
+}
+}
+
+.home h2{
+    color: black;
+}
+
+.home a{
+    display: inline-block;
+    margin-top:10px;
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.home a:hover{
+    background-color: orangered;
+    border-radius:30px;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes btn{
+    0%{border-radius: 5px;}
+    100%{border-radius: 30px;}
+    
+}
+
+@media screen and (max-width:780px) {
+    section{
+        padding: 10px 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    } 
+    .home .content{
+        max-width: 500px;
+    }  
+    .home .image img{
+        margin-top: 15px;
+    }
+    .home h2{
+        margin-top: 50px !important;
+    }
+}
+@media screen and (max-width:450px) {
+    .home .image img{
+        max-width: 250px;
+    }
+}
+
+/* SPECIAL FOOD SECTION __________________ */
+
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.special{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.burger{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 360px;
+    border: 1px solid black;
+    box-shadow:0.5px 1px 15px rgb(112, 111, 111);
+}
+.burger:hover{
+    box-shadow:0.5px 1px 20px rgb(34, 33, 33);
+}
+.burger > h1 p{
+    margin: 0px;
+}
+
+/* POPULOR SECTION __________________ */
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 360px;
+    height: 340px;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid black;
+    box-shadow:0.5px 1px 15px rgb(112, 111, 111);
+}
+.box:hover{
+    box-shadow:0.5px 1px 20px rgb(34, 33, 33);
+}
+.box img{
+    height: 200px;
+    width:97%;
+}
+.box a{
+    text-decoration: none;
+    background-color: white;
+    color: orangered;
+    padding: 5px 10px;
+    border: 0.5px solid orangered;
+    border-radius: 20px;
+}
+.box h1{
+    margin: 0px;
+}
+.box p{
+    margin: 0px;
+}
+.box a:hover{
+    background-color: orangered;
+    color: white;
+}
+
+/* WorkBox Section______ */
+
+.workBoxs{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.wBox{
+    width: 250px;
+    align-self: center;
+}
+.Box1{
+    display: flex;
+    justify-content: center;
+}
+
+.Box1 img{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    box-shadow:0.5px 1px 15px rgb(112, 111, 111);
+}
+.Box1 img:hover{
+    animation-name: rote;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes rote{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}
+.Box2{
+    padding: 10px;
+    text-align: center;
+}
+/* Gallery Section_________ */
+
+.foodGallery, .gallery{
+    margin-top: 70px;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galleryBox{
+    background-color: white;
+    width: 360px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px 10px;
+    border: 1px solid black;
+    box-shadow:0.5px 1px 15px rgb(112, 111, 111);
+}
+@media screen and (max-width:380px) {
+    .galleryBox{
+        height: 250px;
+    }
+}
+.galleryBox:hover{
+    box-shadow:0.5px 1px 20px rgb(34, 33, 33);
+}
+.galleryBox img{
+    width: 100%;
+    height: 100%;
+}
+
+/* REVIEW $$$$$$$$$$$$$$$$$$$$$$ */
+.cImg img{
+    background-color: white;
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: -60px;
+}
+.cHRP{
+    max-width: 340px;
+    min-height: 320px;
+    background-color:rgb(70, 65, 65);
+    padding: 10px;
+    border: 10px solid white;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow:0.5px 1px 15px rgb(112, 111, 111);
+    margin:40px 10px;
+}
+.cHRP h2, .cHRP p,.star{
+    margin: 10px 0px;
+}
+.reviewBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+}
+.customer{
+    margin-top: 60px;
+}
+
+/* Order Place Area $$$$$$$$$$$$ */
+.orderImg  img{
+    width:90% ;
+    height: 350px;
+}
+.order{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    /* padding: 20px; */
+    background-color: white;
+    margin: 30px 190px;
+    padding: 15px;
+    box-shadow:0.5px 1px 15px rgb(112, 111, 111);
+}
+.inputTag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 600px;
+    justify-content: center;
+    background-color: white;
+}
+textarea{
+    width: 560px;
+    height: 220px;
+}
+.inputTag > input{
+    width: 270px;
+    height: 30px;   
+    margin: 10px;
+}
+.inputTag a{
+    color: orangered;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.order a:hover{
+    background-color: orangered !important;
+}
+
+@media screen and (max-width:1150px) {
+    textarea{
+        width: 400px;
+        height: 220px;
+    }
+    .inputTag > input{
+        width: 90%px;
+        height: 30px;   
+        margin: 10px;
+    }
+}
+@media screen and (max-width:1000px) {
+    textarea{
+        width: 100%;
+        height: 150px;
+    }
+    .inputTag > input{
+        width: 100%;
+        height: 30px;   
+        margin: 10px;
+    }
+    .order{
+        margin: 30px 80px;
+    }
+    
+}
+@media screen and (min-width:1001px) {
+    .inputTag > input:focus{
+        width: 100%;
+    }
+    .inputTag > input:focus{
+        animation-name: fullInput;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+    @keyframes fullInput{
+        0%{width: 270px;}
+        100%{width:100%;}
+    }
+}
+@media screen and (max-width:800px) {
+    
+    .order{
+        margin: 30px 40px;
+    }
+}
+@media screen and (max-width:500px) {
+    
+    .order{
+        margin: 30px 20px;
+    }
+}
+@media screen and (max-width:390px) {
+    
+    .order{
+        margin: 30px 8px;
+    }
+} 
+
+
+footer{
+    background-color:black ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+footer a{
+    color: orangered;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px;
+}
+footer button{
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px auto;
+}
+h5{
+    color: white !important;
+    font-size: 1.5em;
+}
+footer a:hover{
+    color: white !important;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px;
+}
+footer button:hover{
+    background-color: black;
+}
